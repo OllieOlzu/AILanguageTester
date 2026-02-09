@@ -24,7 +24,7 @@ app.post("/api/chat", async (req, res) => {
         { role: "system", content: "You are a friendly assistant." },
         { role: "user", content: message }
       ],
-      model: "gpt-4o",  // or any other supported model
+      model: "qwen/qwen3-32b",  // or any other supported model
     });
 
     // The API returns an array of choices
