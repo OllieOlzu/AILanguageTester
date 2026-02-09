@@ -24,6 +24,7 @@ app.post("/api/chat", async (req, res) => {
         { role: "system", content: "You are a friendly assistant." },
         { role: "user", content: message }
       ],
+      reasoning: { effort: "none" },
       model: "qwen/qwen3-32b",  // or any other supported model
     });
 
